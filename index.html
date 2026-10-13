@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light"><meta name="theme-color" content="#101c2e">
+<title>LedgerLens — Reconciliation Workbench</title><meta name="description" content="A practical reconciliation desk for detecting financial ledger mismatches, duplicate references and unmatched transactions.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#overview" aria-label="LedgerLens home"><span class="brand-mark">LL</span><span><span class="brand-name">LedgerLens</span><span class="brand-sub">ENGINEERING LAB</span></span></a>
+    <div><p class="nav-label">WORKSPACE</p><nav class="nav" id="navigation"><button type="button" data-view="overview" class="active"><span class="nav-ico">◫</span>Overview</button><button type="button" data-view="exceptions" class=""><span class="nav-ico">≋</span>Exceptions</button><button type="button" data-view="import" class=""><span class="nav-ico">↑</span>Import data</button></nav></div>
+    <div class="sidebar-bottom"><strong><span class="demo-dot"></span>Sandbox environment</strong><p>Fictional data only. No bank connection.</p></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow" id="eyebrow">OPERATIONS / PORTFOLIO DEMO</div><h1 class="page-title" id="page-title">LedgerLens — Reconciliation Workbench</h1><p class="page-subtitle" id="page-subtitle">A practical reconciliation desk for detecting financial ledger mismatches, duplicate references and unmatched transactions.</p></div><div class="top-actions"><span class="pill blue">● LOCAL DEMO</span><div class="avatar" title="Demo analyst">DA</div></div></header>
+    <div id="app" aria-live="polite"></div>
+    <footer class="footer"><span>LedgerLens · Portfolio engineering demonstration</span><span>Offline-first · No external dependencies · Fictional data</span></footer>
+  </main>
+</div>
+<div id="toast-region" aria-live="polite" aria-atomic="true"></div>
+<script src="core.js"></script><script src="app.js"></script>
+</body></html>
